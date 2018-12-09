@@ -1,0 +1,13 @@
+on break of iron ore:
+  cancel event
+  set event-block to air
+  message "&7Minage en cours ... [&433%%&7]"
+  wait 3 seconds
+  message "&7Minage en cours ... [&666%%&7]"
+  wait 3 seconds
+  message "&7Minage en cours ... [&e99%%&7]"
+  wait 1 seconds
+  message "&7Minage terminé ! [&a100%%&7]"
+  drop 1 iron_ore named "Silice"
+  wait 3 minutes
+  set event-block to iron_ore

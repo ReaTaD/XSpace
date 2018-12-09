@@ -1,0 +1,11 @@
+on smelt:
+  if ore slot of block contains iron_ore named "Silicium"
+  cancel event
+  broadcast "&7Raffinage du Silicium en cours ... [&433%%&7]"
+  wait 10 seconds
+  broadcast "&7Raffinage du Silicium en cours ... [&666%%&7]"
+  wait 10 seconds
+  broadcast "&7Raffinage du Silicium en cours ... [&e99%%&7]"
+  wait 4 seconds
+  broadcast "&7Raffinage du Silicium terminé ! [&a100%%&7]"
+  drop 1 iron named "Silicium"

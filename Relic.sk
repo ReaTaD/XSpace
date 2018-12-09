@@ -1,0 +1,14 @@
+on right click on mossy_stone_bricks:
+  set {_waited} to difference between {relic.%player%.lastused} and now
+  if {_waited} is less than 1 minute:
+  message "&7Il n'y a plus rien à découvrir sur cette relique !"
+  stop
+
+  player doesn't have space for a iron_ore:
+    message "&7Tu n'a plus assez de place dans on inventaire"
+    wait 2 seconds
+    stop
+
+  give a iron_ore to the player
+
+  set {relic.%player%.lastused} to now
